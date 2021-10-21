@@ -1,0 +1,18 @@
+                                                                                Executable  Executed    Non-Executed  Percent
+Filename                                                                        diff lines  diff lines  diff lines    Coverage
+-----------------------------------------                                       ----------  ----------  ------------  ----------
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_cli_parser.c                               87          63             -    72.41%
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_wavl_iter.c                               178         119             -    66.85%
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_config.c                                   78          66             -    84.62%
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_stats.c                                    67          58             -    86.57%
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_debug.c                                    16          15             -    93.75%
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_adj_db.c                                  434         345             -    79.49%
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_timer.c                                    79          60             -    75.95%
+
+
+Total number of Executable Lines_input2:                                               939
+Total number of Executed Lines_input2:                                                 726
+Total number of Non-Executed Lines_input2:                                             -
+Total Coverage Percent Summary_input2:                                                 77.32%
+
