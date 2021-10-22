@@ -1,0 +1,113 @@
+/Users/gargarg/PycharmProjects/pythonProject/HelloWorld/venv/bin/python /Users/gargarg/PycharmProjects/pythonProject/HelloWorld/tr.py
+Note:-
+1)+ Means file present in input2 but not in input1
+2)- Means file present in input1 but not in input2
+3)if no sign means matched files
+
+- 
+
+                                                                                  Executable  Executed    Non-Executed  Percent
+
+- Filename                                                                        :qdiff lines  diff lines  diff lines    Coverage
+
+?                                                                                 --
+
++ Filename                                                                        diff lines  diff lines  diff lines    Coverage
+
+  -----------------------------------------                                       ----------  ----------  ------------  ----------
+
+  
+
+- /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_ios.c                                     155          96             -    61.94%
+
+- /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_config.c                                  102          89             -    87.25%
+
+- /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_stats.c                                    67          58             -    86.57%
+
+  /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_cli_parser.c                               87          63             -    72.41%
+
+  /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_wavl_iter.c                               178         119             -    66.85%
+
++ /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_config.c                                   78          66             -    84.62%
+
++ /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_stats.c                                    67          58             -    86.57%
+
++ /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_debug.c                                    16          15             -    93.75%
+
+  /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_adj_db.c                                  434         345             -    79.49%
+
+- /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_debug.c                                    16          15             -    93.75%
+
+  /vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_timer.c                                    79          60             -    75.95%
+
+  
+
+  
+
+- Total number of Executable Lines_input1:                                               1118
+
+?                                       ^                                                ^^^^
+
++ Total number of Executable Lines_input2:                                               939
+
+?                                       ^                                                ^^^
+
+- Total number of Executed Lines_input1:                                                 845
+
+?                                     ^                                                  ^^^
+
++ Total number of Executed Lines_input2:                                                 726
+
+?                                     ^                                                  ^^^
+
+- Total number of Non-Executed Lines_iput1:                                             -
+
+?                                        ^
+
++ Total number of Non-Executed Lines_input2:                                             -
+
+?                                     +   ^
+
+- Total Coverage Percent Summary_input1:                                                 75.58%
+
+?                                     ^                                                   ^ ^^
+
++ Total Coverage Percent Summary_input2:                                                 77.32%
+
+?                                     ^                                                   ^ ^^
+
+  
+
+Summary
+Common files in both input files
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_stats.c                                    67          58             -    86.57%
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_adj_db.c                                  434         345             -    79.49%
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_debug.c                                    16          15             -    93.75%
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_wavl_iter.c                               178         119             -    66.85%
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_timer.c                                    79          60             -    75.95%
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_cli_parser.c                               87          63             -    72.41%
+
+<Section: input1>
+{'no_of_files': '8', 'total_coverage_percentage': '75.58'}
+unique files in input1:
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_ios.c                                     155          96             -    61.94%
+
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_config.c                                  102          89             -    87.25%
+
+<Section: input2>
+{'no_of_files': '7', 'total_coverage_percentage': '77.32'}
+unique files in input2:
+/vob/cisco.comp/mpls/oam/cmn/lspv/dpm/lspv_dpm_config.c                                   78          66             -    84.62%
+
+<Section: difference_in_files>
+{'difference_in_no_of_files': '1', 'difference_in_coverage': '-1.7399999999999949'}
+Input 2 file is having more coverage rate compare to Input1 file by:
+1.7399999999999949
+
+Process finished with exit code 0
+
