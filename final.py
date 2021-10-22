@@ -24,12 +24,27 @@ def percentage(filename):
                 per="".join(line)
     return (per.split()[-1].split("%")[0])
 
+def com(input1,input2):
+    with open(input1,'r') as file1:
+        with open(input2,'r') as file2:
+            same=set(file1).intersection(file2)
 
-with open('fcov.conf')as f:
-    data=f.read()
-a=ast.literal_eval(data)
-input1=a['path1']
-input2=a['path2']
+            for line in same:
+                if (line.startswith('/')):
+                    print(line)
+
+def diff(input1,input2):
+
+    with open(input1,'r') as file1:
+        with open(input2,'r') as file2:
+            differ=set(file1).difference(set(file2))
+            for x in differ:
+                if(x.startswith('/')):
+                    print(x)
+
+
+input1="/Users/gargarg/Desktop/task1/input1_diff_coverage_final.summary"
+input2="/Users/gargarg/Desktop/task1/input2_diff_coverage_final.summary"
 print("\033[1m"+"Note:-")
 print("1)+ Means file present in input2 but not in input1")
 print("2)- Means file present in input1 but not in input2")
@@ -55,13 +70,20 @@ config.set('input1','total_coverage_percentage',code_coverage1_per)
 config.set('input2','total_coverage_percentage',code_coverage2_per)
 config.set('difference_in_files','difference_in_no_of_files',str(diff_files))
 config.set('difference_in_files','difference_in_coverage',str(diff_coverage))
+
 with open(file,'w')as configfile:
     config.write(configfile)
 print('Summary')
+print('Common files in both input files')
+com(input1,input2)
 print(config['input1'])
 print(dict(config.items('input1')))
+print('unique files in input1:')
+diff(input1,input2)
 print(config['input2'])
 print(dict(config.items('input2')))
+print('unique files in input2:')
+diff(input2,input1)
 print(config['difference_in_files'])
 print(dict(config.items('difference_in_files')))
 if(diff_coverage<0):
