@@ -1,0 +1,13 @@
+[input1]
+no_of_files = 8
+total_coverage_percentage = 75.58
+
+[input2]
+no_of_files = 7
+total_coverage_percentage = 77.32
+
+[difference_in_files]
+difference_in_no_of_files = 1
+difference_in_coverage = -1.7399999999999949
+
+
